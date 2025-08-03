@@ -24,15 +24,25 @@
             color: #6366f1;
             border-bottom: 3px solid #6366f1;
             padding-bottom: 10px;
+            font-size: 2em;
+            font-weight: bold;
         }
         h2 {
             color: #4f46e5;
             margin-top: 30px;
+            font-size: 1.4em;
+            font-weight: 600;
         }
-        .highlight {
+        h3 {
+            color: #333;
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .highlight-box {
             background-color: #f0f9ff;
             padding: 15px;
-            border-left: 4px solid #3b82f6;
+            border-left: 4px solid #22c55e;
             margin: 20px 0;
         }
         .contact {
@@ -41,88 +51,95 @@
             border-radius: 8px;
             margin-top: 30px;
         }
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .bullet-list li:before {
+            content: "• ";
+            font-weight: bold;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> January 3, 2025</p>
-        <p><strong>App:</strong> Explain Yourself</p>
-        <p><strong>Developer:</strong> Studio Saints</p>
 
-        <div class="highlight">
-            <strong>The Simple Version:</strong> We barely collect anything. Your fun stays private, your data stays yours, and we're not sneaky about it.
-        </div>
-
-        <h2>What We Actually Do (Spoiler: Very Little)</h2>
+        <h2>Who We Are</h2>
+        <p>Studio Saints created "Explain Yourself" as a fun party game. We believe in keeping things simple and respecting your privacy.</p>
         
-        <h3>What We Collect:</h3>
-        <ul>
-            <li><strong>User ID:</strong> A random identifier from Apple/Google when you sign in (so we can save your purchases)</li>
-            <li><strong>Purchase History:</strong> What packs you've bought (so we can restore them)</li>
-            <li><strong>Voice Recordings:</strong> Temporarily processed for AI responses, then immediately deleted</li>
-            <li><strong>Game Data:</strong> Your game history and player stats (stored only on your device)</li>
+        <p><strong>Contact Information:</strong></p>
+        <ul class="bullet-list">
+            <li>App Developer: Studio Saints</li>
+            <li>Email: hello@studiosaints.io</li>
         </ul>
 
-        <h3>What We DON'T Collect:</h3>
-        <ul>
-            <li>Your email address</li>
-            <li>Your real name</li>
-            <li>Your contacts</li>
-            <li>Your location (beyond country for legal compliance)</li>
-            <li>Your photos</li>
-            <li>Anything from your microphone except during gameplay</li>
+        <h2>How The Data Gets Used:</h2>
+        
+        <h3>When You Sign In</h3>
+        <ul class="bullet-list">
+            <li>We get a random user ID from Apple or Google (like "user123")</li>
+            <li>This lets you keep your purchases if you reinstall the app</li>
+            <li>We never see your email, real name, or personal info</li>
+        </ul>
+
+        <h3>When You Play A Round</h3>
+        <ul class="bullet-list">
+            <li>Player names you type stay on YOUR phone only</li>
+            <li>Voice recordings go to OpenAI to turn speech into text, then get deleted forever</li>
+            <li>Your answers and game history stay on YOUR phone only</li>
+            <li>Your photos/selfies never leave your device and are used for a more fun gameplay only</li>
+            <li>Win/loss stats stay on YOUR phone for the leaderboard</li>
+        </ul>
+
+        <h3>When You Make A Purchase</h3>
+        <ul class="bullet-list">
+            <li>Apple handles all payments (we never see your credit card)</li>
+            <li>We track what packs you bought (through the user ID) so you keep them forever</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h2>What We Don't Do</h2>
+            <ul class="bullet-list">
+                <li>No GPS or location tracking</li>
+                <li>No reading your contacts or photos</li>
+                <li>No selling your data to advertisers</li>
+                <li>No analytics or spy stuff</li>
+                <li>No storing your voice recordings</li>
+                <li>No accessing your real name or email</li>
+            </ul>
+        </div>
+
+        <h2>Region Detection (For EU Privacy Laws)</h2>
+        <ul class="bullet-list">
+            <li>We check your phone's region setting (like "United States" or "Germany")</li>
+            <li>This is the same setting the App Store uses</li>
+            <li>We only use this to show GDPR consent for EU users during sign in</li>
         </ul>
 
         <h2>Where Your Data Lives</h2>
-        <ul>
-            <li><strong>On your device:</strong> Game history, player profiles, photos you take</li>
-            <li><strong>Apple/Google:</strong> Your purchase receipts (we don't control this)</li>
-            <li><strong>Our servers:</strong> Just your user ID and purchase info</li>
+        <ul class="bullet-list">
+            <li>User ID: With Firebase (Google's secure service)</li>
+            <li>Voice processing, player names, and your answers: OpenAI (very briefly for processing, then deleted)</li>
+            <li>Player selfies: On your phone ONLY</li>
+            <li>Purchases: With Apple (their secure system)</li>
         </ul>
 
-        <h2>How We Use Your Info</h2>
-        <ul>
-            <li><strong>User ID:</strong> To save and restore your purchases</li>
-            <li><strong>Voice recordings:</strong> To generate AI responses (then deleted immediately)</li>
-            <li><strong>Purchase data:</strong> To unlock the content you paid for</li>
-            <li><strong>Country detection:</strong> To show GDPR consent for EU users</li>
-        </ul>
-
-        <h2>Your Rights (You're In Control)</h2>
-        <ul>
-            <li><strong>Delete your account:</strong> Settings → Delete Account (removes everything)</li>
-            <li><strong>Clear your data:</strong> Settings → Clear Game History / Clear Leaderboard</li>
-            <li><strong>Control purchases:</strong> Managed through Apple/Google, not us</li>
-        </ul>
-
-        <h2>Who We Share With</h2>
-        <p><strong>Short answer:</strong> Basically nobody.</p>
-        <ul>
-            <li><strong>AI services:</strong> Voice recordings for processing (immediately deleted)</li>
-            <li><strong>Apple/Google:</strong> Purchase verification only</li>
-            <li><strong>Nobody else:</strong> We don't sell, rent, or share your data</li>
-        </ul>
-
-        <h2>Security</h2>
-        <p>We use industry-standard security. Your data is encrypted in transit and at rest. But let's be honest - since we barely collect anything, there's not much to worry about.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>This app isn't specifically for kids, but we don't collect personal information from anyone under 13 without parental consent. Actually, we don't collect much personal information from anyone.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>If we change this policy, we'll update the date above and let you know in the app. We're not planning any major changes since our approach is "collect as little as possible."</p>
+        <h2>The Legal Stuff</h2>
+        <p>We follow GDPR (European privacy laws) and COPPA (kid protection laws). If something changes, we'll let you know. This app is for ages 13+ because the AI may at times be unpredictable. And because what you input is what it outputs in terms of content.</p>
 
         <div class="contact">
             <h2>Questions?</h2>
-            <p>We're real people who actually read emails. Contact us at:</p>
-            <p><strong>hello@studiosaints.io</strong></p>
-            <p>We typically respond within 24 hours.</p>
+            <p>Email us at hello@studiosaints.io if you have any questions or concerns.</p>
         </div>
 
         <hr style="margin: 30px 0; border: 1px solid #e5e7eb;">
         <p style="text-align: center; color: #6b7280; font-size: 14px;">
-            © 2025 Studio Saints. This policy was written by humans, for humans.
+            © 2025 Studio Saints
         </p>
     </div>
 </body>
